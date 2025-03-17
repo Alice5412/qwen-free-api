@@ -110,7 +110,7 @@ curl -X POST http://localhost:5000/v1/chat/completions \
 }'
 ```
 
-- `base_url`: `http://localhost:5000/v1/chat/completions`
+- `base_url`: `http://localhost:5000/v1`
 - `api`: 随意
 - `model`: 随意
 
