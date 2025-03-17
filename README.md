@@ -35,7 +35,7 @@ pip install -r requirements.txt
 
 ### 首次使用
 
-如果您是首次使用本项目，需要先进行登录操作以创建浏览器用户数据。请按照以下步骤操作：
+如果您是首次使用本项目，需要先进行登录操作以创建浏览器用户数据，需要打开VPN。请按照以下步骤操作：
 
 1. 首先运行登录脚本：
 
@@ -91,7 +91,7 @@ python main.py
 
 ## API使用
 
-服务启动后，可以通过openAI的api方式进行调用，支持流式输出和非流式。
+服务启动后，可以通过openAI的api方式进行调用，支持流式输出和非流式（仅支持单线程）。
 
 ### 示例请求
 
@@ -120,21 +120,7 @@ curl -X POST http://localhost:5000/v1/chat/completions \
 2. 服务启动后会自动进行一次自调用测试，确保服务正常运行
 3. 请求队列最大长度为5，超过会等待，最长等待时间为30秒
 
-## 安全提示
 
-- 请勿在公共环境中存储您的登录凭据
-- 建议在本地开发环境中使用此项目
-- 不要将包含您登录信息的文件提交到版本控制系统
-
-## 贡献指南
-
-欢迎对本项目进行贡献！以下是贡献的步骤：
-
-1. Fork 本仓库
-2. 创建您的特性分支 (`git checkout -b feature/amazing-feature`)
-3. 提交您的更改 (`git commit -m 'Add some amazing feature'`)
-4. 推送到分支 (`git push origin feature/amazing-feature`)
-5. 打开一个 Pull Request
 
 ## 许可证
 
