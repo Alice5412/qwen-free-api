@@ -1,0 +1,11 @@
+# 浏览器配置
+headless: true
+page_load_timeout: 20
+wait_timeout: 15
+retry_max: 3
+retry_delay: 0.5
+poll_interval: 0.2
+
+# 服务器配置
+host: "0.0.0.0"
+port: 5000 
